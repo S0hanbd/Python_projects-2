@@ -1,20 +1,13 @@
+def isPalindrome(x):
+    if x < 0:
+        return False
+    num = []
+    x = str(x)
+    for i in range(len(x) // 2):
+        if x[i] != x[-i-1]:
+            return False
+    return True
 
 
-def twoSum(nums, target):
-    """
-    :type nums: List[int]
-    :type target: int
-    :rtype: List[int]
-    """
-    seen = {}  # Map to store: value -> index
-    print(seen)
-    for i, num in enumerate(nums):
-        complement = target - num
-        if complement in seen:
-            return [seen[complement], i]
-        seen[num] = i
-    print(seen)
-    return None
 
-
-print(twoSum([3, 2, 4], 6))  # Output: [1, 2]
+print(isPalindrome(534357))
