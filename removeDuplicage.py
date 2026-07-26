@@ -14,3 +14,4 @@ class Solution(object):
 
 solution = Solution()
 print(solution.removeDuplicates([1,1,2,2,3,3,4,4]))
+pr

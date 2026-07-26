@@ -21,5 +21,4 @@ def romanToInt(s):
 
     return finalValue
 
-print(romanToInt('MCMXCIV'))
-print(romanToInt('III'))
+print(romanToInt(input("Enter a roman numeral: ")))
